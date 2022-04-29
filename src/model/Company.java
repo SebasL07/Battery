@@ -75,7 +75,7 @@ public class Company{
         } 
         prom = sum/counter;
 
-        return counter;
+        return prom;
 	}
 
 }
