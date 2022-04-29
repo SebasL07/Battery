@@ -63,12 +63,12 @@ public class Menu {
 			break;
 
 		case 4:
-			//System.out.println("El costo promedio de vida util de las baterias recargables es: "+ company.calculateUsefulPromLifeCost());
+			System.out.println("El costo promedio de vida util de las baterias recargables es: "+ company.calculateUsefulPromLifeCost());
 		    // "(4) Para Calcular el promedio de costo de vida util de las baterias recargables\n"+ 
 			break;
 
 		case 5:
-			//System.out.println(company.showBatteriesInfo());
+			System.out.println(company.showBatteriesInfo());
 			// "(5) Para mostrar la informacion de todas las baterias\n" +
 			break;
 		

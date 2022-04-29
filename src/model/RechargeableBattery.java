@@ -10,6 +10,7 @@ public class RechargeableBattery extends Battery implements Rechargeable{
 	private int chargerNumber;
 	private char type;
 
+
 	public RechargeableBattery(String name, double voltage, double cost, double capacity, int chargerNumber, char type){
 
 		super(name, voltage, cost, capacity);
@@ -19,15 +20,15 @@ public class RechargeableBattery extends Battery implements Rechargeable{
 
 	@Override
 	public String toString(){
-		return "Bateria recargable \n" +
+		return "\nBateria recargable \n" +
 		"Nombre: " + name +"\n" + 
-		"Costo de vida util: " + calculateUsefulLifeCost(); 
+		"Costo de vida util: " + calculateUsefulLifeCost() + "\n"; 
 	}
 
 	@Override
 	public double calculateUsefulLifeCost(){
 
-		double usefulLifeCost1 = 0;
+		double usefulLifeCost = 0;
 
 		if(type == 'l'){
 			usefulLifeCost = (cost*voltage*capacity)/(1000*chargerNumber*FACTOR_LITIO);
@@ -35,7 +36,7 @@ public class RechargeableBattery extends Battery implements Rechargeable{
 			usefulLifeCost = (cost*voltage*capacity)/(1000*chargerNumber*FACTOR_NIQUEL_CADIO);
 		}
 
-		return usefulLifeCost1;
+		return usefulLifeCost;
 	}
 
 
